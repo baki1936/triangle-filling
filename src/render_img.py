@@ -1,7 +1,7 @@
 import numpy as np
-import flat_shading
-import gouraud_shading
-import texture_maps_shading
+from . import flat_shading
+from . import gouraud_shading
+from . import texture_maps_shading
 
 
 def render_img(faces, vertices, vcolors, uvs, depth, shading, textImg):
@@ -66,5 +66,3 @@ def render_img(faces, vertices, vcolors, uvs, depth, shading, textImg):
             print("Unknown shading type")
 
     return img
-
-
